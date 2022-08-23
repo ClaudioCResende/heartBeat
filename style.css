@@ -1,0 +1,69 @@
+body{
+    margin:0;
+    padding:0;
+    width:100vw;
+    height:100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position:relative;
+    
+}
+
+.box{
+    padding:5px;
+    box-shadow: 1px 1px 10px 3px red;
+    color:red;
+    position:absolute;
+}
+
+.buttons{
+    display: flex;
+    justify-content: space-between;
+}
+
+button{
+    padding:10px;
+    width:50px;
+    background: linear-gradient(120deg, pink, red);
+    color:rgb(0, 0, 0);
+    font-weight: bold;
+    outline:none;
+    border:none;
+    cursor:pointer;
+}
+
+i.hide{
+    visibility: hidden;
+    display: none; 
+}
+
+i.show{
+    visibility: visible;
+    display: block;
+    color: red;
+    font-size: 5.5rem;
+    animation: zoom 1.5s  infinite alternate ease-in-out ;
+}
+
+i.fix{
+    visibility: visible;
+    display: block;
+    color: red;
+    font-size: 5.5rem;
+    transform: scale(2.8);
+}
+
+div.box.hide{
+    visibility: hidden;
+    display: none;
+}
+
+@keyframes zoom {
+    to{
+        transform:scale(1.4)
+    }
+}
+
+
+
